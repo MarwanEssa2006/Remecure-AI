@@ -208,7 +208,13 @@ def call_llm(prompt_text, progress=None, notify=None):
     from google.genai import types
 
     say = notify or (lambda m: None)
-    client = genai.Client(api_key=key, http_options=types.HttpOptions(timeout=TIMEOUT_MS))
+    client = genai.Client(
+    api_key=key,
+    http_options=types.HttpOptions(
+        timeout=TIMEOUT_MS,
+        api_version="v1beta"
+    )
+    )
     prompt = "TDS CONTENT:\n" + prompt_text
     models = [MODEL] + [m for m in FALLBACK_MODELS if m != MODEL]
     last = None
