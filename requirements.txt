@@ -1,0 +1,32 @@
+# Web Application
+streamlit
+
+# Google Gemini API
+google-genai
+
+# Document Processing
+python-docx
+docxcompose
+pdfplumber
+PyMuPDF
+pypdf
+lxml
+
+# Data Processing
+pandas
+numpy
+openpyxl
+
+# Image Processing
+Pillow
+
+# Environment & Configuration
+python-dotenv
+pydantic
+
+# HTTP Requests
+requests
+httpx
+
+# Reliability & Retry Handling
+tenacity
